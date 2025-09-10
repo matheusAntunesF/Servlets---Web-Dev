@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Aplicação 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+              rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <div class="container-xxl justify-content-center text-center d-flex align-content-center flex-wrap" style="height: 100vh">
+            <div>
+                <div class="d-flex align-items-center gap-3">
+                    <h1>
+                        <i class="bi bi-calculator" style="font-size: 2.5rem;"></i>
+                        Calculadora
+                    </h1>
+                </div>
+                <form action="Calcular" method="get">  
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="valorA" name="valorA" placeholder="0" required>
+                        <label for="valorA">Valor A:</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" id="valorB" name="valorB" placeholder="0" required>
+                        <label for="valorB">Valor B:</label>
+                    </div>
+                    <button type="submit" name="operacao" value="Somar" class="btn btn-primary ml-3">
+                        <i class="bi bi-plus-lg"></i>
+                    </button>
+                    <button type="submit" name="operacao" value="Subtrair" class="btn btn-primary">
+                        <i class="bi bi-dash-lg"></i>
+                    </button>
+                    <button type="submit" name="operacao" value="Multiplicar" class="btn btn-primary">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                    <button type="submit" name="operacao" value="Dividir" class="btn btn-primary">
+                        <i class="bi bi-slash-lg"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
