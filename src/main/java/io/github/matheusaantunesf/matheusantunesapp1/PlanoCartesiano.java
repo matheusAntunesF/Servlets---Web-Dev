@@ -37,6 +37,17 @@ public class PlanoCartesiano extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet PlanoCartesiano</title>");
+            out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+            out.println("<title>Servlet Calcular</title>");
+            out.println("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\" crossorigin=\"anonymous\">");
+            out.println("<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css\">");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<div class=\"container-xxl justify-content-center text-center d-flex align-content-center flex-wrap\" style=\"height: 100vh\">");
+            out.println("<div>");
+            out.println("<div class=\"d-flex align-items-center gap-3\">");
+            out.println("<h1>Distancia entre os dois</h1>");
+            out.println("</div>");
             out.println("</head>");
             out.println("<body>");
             try {
@@ -51,12 +62,16 @@ public class PlanoCartesiano extends HttpServlet {
                 out.println("<li>Ponto 1: (" + ponto1.getX() + ", " + ponto1.getY() + ")</li>");
                 out.println("<li>Ponto 2: (" + ponto2.getX() + ", " + ponto2.getY() + ")</li>");
                 out.println("</ul>");
-                out.print("<p>Distancia entre os dois: " + resultado + "</p>");
+                out.print("<p>" + resultado + "</p>");
             } catch (NumberFormatException e) {
                 out.println("<p>Valor invalido</p>");
             }
 
-            out.println("<a href=\"Aplicacao2.html\">Voltar</p>");
+            out.println("<a href=\"Aplicacao2.html\" class=\"btn btn-primary\">Voltar</p>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\" crossorigin=\"anonymous\"></script>");
+
             out.println("</body>");
             out.println("</html>");
         }

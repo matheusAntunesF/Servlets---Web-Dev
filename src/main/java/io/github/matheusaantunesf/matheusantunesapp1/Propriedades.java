@@ -40,6 +40,17 @@ public class Propriedades extends HttpServlet {
             out.println("<head>");
             out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
             out.println("<title>Servlet Calcular</title>");
+            out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");
+            out.println("<title>Servlet Calcular</title>");
+            out.println("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB\" crossorigin=\"anonymous\">");
+            out.println("<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css\">");
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<div class=\"container-xxl justify-content-center text-center d-flex align-content-center flex-wrap\" style=\"height: 100vh\">");
+            out.println("<div>");
+            out.println("<div class=\"d-flex align-items-center gap-3\">");
+            out.println("<h1>Area</h1>");
+            out.println("</div>");
             out.println("</head>");
             out.println("<body>");
             String lado = request.getParameter("lado");
@@ -49,13 +60,17 @@ public class Propriedades extends HttpServlet {
                     Double resultado;
                     resultado = quadrado.calcularArea();
 
-                    out.println("<p>Resultado: " + resultado + ";</p>");
+                    out.println("<p>" + resultado + "</p>");
                 } catch (NumberFormatException e) {
                     out.println("<p>Valor invalido</p>");
                 }
             }
 
-            out.println("<a href=\"Aplicacao3.html\">Voltar</a>");
+            out.println("<a href=\"Aplicacao3.html\" class=\"btn btn-primary\">Voltar</a>");
+            out.println("</div>");
+            out.println("</div>");
+            out.println("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI\" crossorigin=\"anonymous\"></script>");
+
             out.println("</body>");
             out.println("</html>");
         }
